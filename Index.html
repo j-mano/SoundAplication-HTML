@@ -1,14 +1,15 @@
 ﻿<!DOCTYPE html>
 
 <html lang="en">
-    <head>
-        <meta charset="utf-8" />
-        <title>SFX-Player-Delux</title>
-        <link rel="stylesheet" href="Css/StyleSheet.css">
-        <script src="Javascript/LoadInMusic.js"></script>
-        <script src="Javascript/Interface.js"></script>
-        <script src="Javascript/PlaySound.js"></script>
-    </head>
+<head>
+    <meta charset="utf-8" />
+    <title>SFX-Player-Delux</title>
+    <link rel="stylesheet" href="Css/StyleSheet.css">
+    <link rel="icon" href="Css/Images/Logo.png" type="image/x-icon">
+    <script src="Javascript/LoadInMusic.js"></script>
+    <script src="Javascript/Interface.js"></script>
+    <script src="Javascript/PlaySound.js"></script>
+</head>
 
     <body>
         <div class="vertical-menu">
@@ -22,11 +23,19 @@
 
         <div class="AudioContext">
             <div class="AudioMasterLvlDiv">
-
+                <p>Master Volym</p>
+                <input type="range" min="1" max="100" value="100" orient="vertical" class="MasterVolumSlider" id="MasterVolumSliderValue">
             </div>
 
             <div class="SettingsDiv">
+                <p>Stop all playing sound</p>
+                <button type="button">Stop all sounds</button>
 
+                <p>Set mode to select new sounds in the soundboard.</p>
+                <button type="button">Toggle Mod Audio</button>
+
+                <p>Set the volum on all loaded sound to 0</p>
+                <button type="button">Mute all sounds</button>
             </div>
         </div>
     </body>
